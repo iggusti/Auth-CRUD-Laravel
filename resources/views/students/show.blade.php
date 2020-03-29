@@ -3,6 +3,7 @@
 <!-- @section('title', 'Detail Mahasiswa') -->
 
 @section('content')
+@auth
 <div class="container">
     <div class="row">
         <div class="col-5">
@@ -25,4 +26,5 @@
         </div>
     </div>
 </div>
+@endauth
 @endsection

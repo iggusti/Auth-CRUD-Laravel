@@ -10,7 +10,7 @@ class Student extends Model
     use SoftDeletes;
     protected $fillable = ['nama', 'nim', 'email', 'jurusan'];
 
-    // public function book(){
-    // 	return $this->hasMany('App\Book');
-    // }
+    public function book(){
+    	return $this->hasMany('App\Book');
+    }
 }
