@@ -39,7 +39,7 @@
                     <ul class="navbar-nav mr-auto">
                         <div class="navbar-nav">
                             @auth
-                                <a class="nav-item nav-link" href="{{ url('/mahasiswa')}}">Mahasiswa</a>
+                                <a class="nav-item nav-link" href="{{ url('/school')}}">Schools</a>
                                 <a class="nav-item nav-link" href="{{ url('/students')}}">Students</a>
                                 <a class="nav-item nav-link" href="{{ url('/books')}}">Books</a>
                                 <a class="nav-item nav-link" href="{{ url('/about')}}">About</a>

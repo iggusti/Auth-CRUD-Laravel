@@ -21,8 +21,8 @@
                 @auth
                     <div class="container">
                         <div class="row">
-                            <div class="col-10">
-                                <h1 class="mt-3">Welcome {{ ucfirst(Auth()->user()->name) }}</h1>
+                            <div class="col-12">
+                                <h1 class="mt-3">Welcome {{ Auth::user()->name }}</h1>
                                 <a href="/students/create" class="btn btn-primary my-3">Tambah Data Mahasiswa</a>
                             
                                 @if (session('status'))
@@ -31,13 +31,13 @@
                                     </div>
                                 @endif
                             
-                                <ul class="list-group">
+                                <ul class="list-group mb-2">
                             
                                     @foreach( $students as $student )
-                                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                                        {{ $student->nama }}
-                                        <a href="/students/{{ $student->id }}" class="badge badge-info">detail</a>
-                                    </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            {{ $student->nama }}
+                                            <a href="/students/{{ $student->id }}" class="badge badge-info">detail</a>
+                                        </li>
                                     @endforeach
                             
                                 </ul>
